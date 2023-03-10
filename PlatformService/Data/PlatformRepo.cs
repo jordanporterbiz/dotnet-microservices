@@ -18,7 +18,7 @@ namespace PlatformService.Data
         {
             if (plat == null)
             {
-                throw new ArgumentNullException(nameof(plat));
+                throw new System.ArgumentNullException(nameof(plat));
             }
 
             _context.Platforms.Add(plat);
