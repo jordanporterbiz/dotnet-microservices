@@ -52,6 +52,67 @@ namespace PlatformService.Controllers
             return CreatedAtRoute(nameof(GetPlatformById), new { Id = platformReadDto.Id }, platformReadDto);
         }
 
+        // TODO: Implement UpdatePlatform
+        // [HttpPut("{id}")]
+        // public ActionResult UpdatePlatform(int id, PlatformUpdateDto platformUpdateDto)
+        // {
+        //     var platformModelFromRepo = _repo.GetPlatformById(id);
+        //     if (platformModelFromRepo == null)
+        //     {
+        //         return NotFound();
+        //     }
+
+        //     _mapper.Map(platformUpdateDto, platformModelFromRepo);
+
+        //     _repo.UpdatePlatform(platformModelFromRepo);
+
+        //     _repo.SaveChanges();
+
+        //     return NoContent();
+        // }
+
+        // TODO: Implement PartialPlatformUpdate
+        // public ActionResult PartialPlatformUpdate(int id, JsonPatchDocument<PlatformUpdateDto> patchDoc)
+        // {
+        //     var platformModelFromRepo = _repo.GetPlatformById(id);
+        //     if (platformModelFromRepo == null)
+        //     {
+        //         return NotFound();
+        //     }
+
+        //     var platformToPatch = _mapper.Map<PlatformUpdateDto>(platformModelFromRepo);
+        //     patchDoc.ApplyTo(platformToPatch, ModelState);
+
+        //     if (!TryValidateModel(platformToPatch))
+        //     {
+        //         return ValidationProblem(ModelState);
+        //     }
+
+        //     _mapper.Map(platformToPatch, platformModelFromRepo);
+
+        //     _repo.UpdatePlatform(platformModelFromRepo);
+
+        //     _repo.SaveChanges();
+
+        //     return NoContent();
+        // }
+
+        // TODO: Implement DeletePlatform
+        // [HttpDelete("{id}")]
+        // public ActionResult DeletePlatform(int id)
+        // {
+        //     var platformModelFromRepo = _repo.GetPlatformById(id);
+        //     if (platformModelFromRepo == null)
+        //     {
+        //         return NotFound();
+        //     }
+
+        //     _repo.DeletePlatform(platformModelFromRepo);
+        //     _repo.SaveChanges();
+
+        //     return NoContent();
+        // }
+
 
     }
 }
